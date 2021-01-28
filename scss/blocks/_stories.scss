@@ -1,0 +1,172 @@
+.stories {
+  padding: 64px 0;
+  background-color: #d5fafc;
+
+  &__wrapper {
+    position: relative;
+    background: url('../img/stories/quotemark.png') no-repeat;
+    background-position: left top;
+  }
+
+  &__head {
+    max-width: 445px;
+    position: absolute;
+    left: 80px;
+    top: 55px;
+  }
+
+  &__title {
+    text-align: left;
+    margin: 0 0 8px 0;
+  }
+
+  &__subtitle {
+    text-align: left;
+  }
+  
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0 0 0;
+  }
+
+  &__left {
+    margin: 0 30px 0 0;
+  }
+
+  &__item {
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+
+    &_first, &_third {
+      max-width: 350px;
+    }
+
+    &_first {
+      margin: 0 0 0 auto;
+    }
+
+    &_second {
+      max-width: 445px;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &__img {
+    margin: 0 0 32px 0;
+  }
+
+  &__body {
+    background: url('../img/stories/quotemark_small.png') no-repeat;
+    background-position: left top;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 0 0 0 32px;
+  }
+
+  &__text {
+    margin: 0 0 24px 0;
+  }
+
+  &__author-name {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+  &__author-post {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #969BAB;
+  }
+}
+
+
+@media (max-width: 992px) {
+
+  .stories {
+
+    &__row {
+      padding: 230px 0 0 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .stories {
+    padding: 35px 0;
+    &__wrapper {
+      background-size: 12%;
+    }
+
+    &__head {
+      max-width: 455px;
+      position: static;
+      padding: 15px 0 0 45px;
+      margin: 0 0 48px 0;
+    }
+
+    &__row {
+      display: block;
+      padding: 0;
+    }
+
+    &__left {
+      margin: 0;
+    }
+
+    &__item {
+      max-width: 445px;
+      margin: 0 auto 35px auto;
+
+      &_third {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .stories {
+
+    &__body {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__img {
+      margin: 0 0 15px 0;
+    }
+
+    &__text {
+      margin: 0 0 10px 0;
+    }
+
+    &__author-name {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &__author-post {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .stories {
+
+    &__head {
+      margin: 0 0 30px 0;
+    }
+
+    &__item {
+      padding: 20px;
+    }
+  }
+}

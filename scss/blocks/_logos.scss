@@ -1,0 +1,27 @@
+.logos {
+  &__slider {
+    padding: 25px 0;
+    border-top: 1px solid #dae1e9;
+    border-bottom: 1px solid #dae1e9;
+    &-image {
+      text-align: center;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .logos {
+    // margin: 0 0 58px 0;
+  }
+
+}
+@media (max-width: 480px) {
+  .logos {
+    // margin: 0 0 40px 0;
+  }
+}
